@@ -1,0 +1,168 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Frontend: Vite",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"frontend",
+				"run",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Frontend: Vite",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"frontend",
+				"run",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Frontend: Vite",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"frontend",
+				"run",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Backend: FastAPI",
+			"type": "shell",
+			"command": "c:/Users/bhsyo/Desktop/projet mob/.venv/Scripts/python.exe",
+			"args": [
+				"run_backend.py"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

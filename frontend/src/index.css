@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+:root {
+  --primary: #2563eb;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --ink: #0f172a;
+  --paper: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Spline Sans', 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(1200px 600px at 8% -10%, rgba(37, 99, 235, 0.12), transparent 60%),
+    radial-gradient(800px 500px at 90% 10%, rgba(16, 185, 129, 0.12), transparent 55%),
+    linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: 'Space Grotesk', 'Spline Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stagger > * {
+  animation: riseIn 0.45s ease-out both;
+}
+
+.stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger > *:nth-child(4) { animation-delay: 0.2s; }
+.stagger > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger > *:nth-child(6) { animation-delay: 0.3s; }
+
+/* Chart container */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/* Chat bubble styles */
+.chat-bubble-user {
+  @apply bg-primary-600 text-white rounded-2xl rounded-br-sm px-4 py-3 max-w-[80%];
+}
+
+.chat-bubble-assistant {
+  @apply bg-gray-200 text-gray-900 rounded-2xl rounded-bl-sm px-4 py-3 max-w-[85%];
+}
+
+/* Custom card */
+.card {
+  @apply bg-white/80 dark:bg-gray-800/70 rounded-2xl shadow-sm border border-gray-200/80 p-6 backdrop-blur;
+}
+
+.card-hover {
+  @apply card transition-all hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+/* Form inputs */
+.input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+}
+
+.input-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 font-medium rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500;
+}
+
+.btn-success {
+  @apply btn bg-success-600 text-white hover:bg-success-700 focus:ring-success-500;
+}
+
+.btn-warning {
+  @apply btn bg-warning-500 text-white hover:bg-warning-600 focus:ring-warning-500;
+}
+
+.btn-danger {
+  @apply btn bg-danger-500 text-white hover:bg-danger-600 focus:ring-danger-500;
+}
